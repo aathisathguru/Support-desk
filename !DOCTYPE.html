@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIT SUPPORT DESK</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6 shadow">
+    <h1 class="text-3xl font-bold">Support desk </h1>
+    <p class="text-sm">A 24X7 Quick responsive call support.</p>
+  </header>
+
+  
+  <section class="p-8 bg-white">
+    <h2 class="text-2xl font-semibold mb-4">About us</h2>
+    <p>Need help at any time of the day? Our dedicated support team is available 24 hours a day, 7 days a week to assist you with any queries or issues. Whether it's a quick question or a detailed concern, we're just a call away. Reach us anytime at our toll-free number: 1800-123-4567 or Fill out the below details and message your problem .</p>
+  </section>
+
+  
+  <section class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+    <form class="space-y-4 max-w-md">
+      <input type="text" placeholder="Your Name" class="w-full p-2 border rounded" required />
+      <input type="text" placeholder="Your Reg No" class="w-full p-2 border rounded" required />
+      <input type="email" placeholder="Your Email" class="w-full p-2 border rounded" required />
+      <textarea placeholder="Your Message" class="w-full p-2 border rounded" rows="4" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+    </form>
+  </section>
+
+  
+  <footer class="bg-gray-800 text-white text-center p-4">
+    &copy; BIT support desk
+  </footer>
+
+  <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thanks for reaching out!');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
